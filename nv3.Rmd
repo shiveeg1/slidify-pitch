@@ -1,0 +1,98 @@
+---
+
+title : Rankers
+subtitle : A result analysis App
+author : Shivee Pradeep Gupta
+job :
+framework : io2012 # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js # {highlight.js, prettify, highlight}
+hitheme : tomorrow #
+ext_widgets : {rCharts: ["libraries/highcharts", "libraries/nvd3", "libraries/morris","libraries/mathjax"]} # {mathjax, quiz, bootstrap}
+mode : selfcontained # {standalone, draft}
+---
+
+## What it does ?
+Gives you the following analysis for your entered score:-
+<ul><li>Percentile</li>
+<li>Student above your score</li>
+<li>Students below your score</li>
+<li>Number of backlog Students</li></ul>
+---
+You can choose from following three departments:-
+<ul><li>Entc</li>
+<li>IT</li>
+<li>Comp</li></ul>
+
+---
+
+## Percentile Graph
+ 
+```{r setup, message = F, echo = F, cache = F}
+require(rCharts)
+knitr::opts_chunk$set(comment = NA, results = 'asis', tidy = F, message = T)
+```
+ 
+```{r chart1, echo=FALSE}
+score <- read.table("Entc")
+pass <- sort(grep("[0-9]",score$V1,value=TRUE))
+n= c()
+for( i in 1:length(pass)){
+n[i] = sum(pass<=pass[i])
+}
+mydata <- data.frame(pass,n)
+mychart<-nPlot(n~pass,data=mydata,type='lineChart')
+mychart$params$xAxis = "pass"
+mychart$print('chart3')
+```
+<p><center> Graphical representation of the student's percentile</center></p>
+<ul><li>X-axis : Total score acquired</li>
+<li> Y-axis : Number of students below that score</li>
+
+---
+
+## The Mathematics involved
+
+<br></br><p>The percentile formula is as follows:</p>
+$$latex
+percentile = \frac{Number\ of\ students\ below\ the\ score}{Total\ number\ of\ students}
+$$
+
+<br><p>The code implementation is as follows:</p>
+<p><center> 
+percentile[i]= sum(sorted_list_of_scores <= sorted_list_of_scores[i])
+<center></p> 
+
+---
+
+## Salient Features
+
+To the geeks (like me ) who give a damn...
+<br>This is a :<br>
+<ul><li> A self explanatory interactive application with dynamic responses</li>
+<li> Modular code </li>
+<li> All data is read from files thus making the application extensible</li>
+<li> The file names are a list and thus easily refactorable </li>
+</ul> 
+---
+
+And finally...<br>
+<a href = "https://github.com/shiveeg1/Result-Analysis">link to application code on github </a>
+
+<a href = " http://shiveegupta.shinyapps.io/rankers">link to the application on shinyapps.io</a>
+<center>Thank You.</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

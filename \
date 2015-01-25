@@ -1,0 +1,32 @@
+---
+title : Test
+subtitle :
+author :
+job :
+framework : io2012 # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js # {highlight.js, prettify, highlight}
+hitheme : tomorrow #
+ext_widgets : {rCharts: ["libraries/highcharts", "libraries/nvd3", "libraries/morris"]} # {mathjax, quiz, bootstrap}
+mode : selfcontained # {standalone, draft}
+---
+ 
+## Graph 1
+ 
+```{r setup, message = F, echo = F, cache = F}
+require(rCharts)
+knitr::opts_chunk$set(comment = NA, results = 'asis', tidy = F, message = T)
+```
+ 
+ 
+```{r chart1, echo=FALSE}
+score <- read.table("Entc")
+pass <- sort(grep("[0-9]",score$V1,value=TRUE))
+n= c()
+for( i in 1:length(pass)){
+n[i] = sum(pass<=pass[i])
+}
+mydata <- data.frame(pass,n)
+mychart<-nPlot(n~pass,data=mydata,type='line')
+mychart$xAxis(axisLabel = "scores")
+mychart$print("chart3",include_assets= TRUE,cdn=FALSE)
+``` 

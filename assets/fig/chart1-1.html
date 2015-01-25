@@ -1,0 +1,589 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.css'>
+    
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
+    <script src='//d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.js' type='text/javascript'></script>
+    <script src='//nvd3.org/assets/lib/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chartb85297b7d83' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchartb85297b7d83()
+    });
+    function drawchartb85297b7d83(){  
+      var opts = {
+ "dom": "chartb85297b7d83",
+"width":    800,
+"height":    400,
+"x": "pass",
+"y": "n",
+"type": "lineWithFocusChart",
+"id": "chartb85297b7d83" 
+},
+        data = [
+ {
+ "pass": "354",
+"n": 1 
+},
+{
+ "pass": "361",
+"n": 2 
+},
+{
+ "pass": "377",
+"n": 3 
+},
+{
+ "pass": "382",
+"n": 5 
+},
+{
+ "pass": "382",
+"n": 5 
+},
+{
+ "pass": "389",
+"n": 6 
+},
+{
+ "pass": "399",
+"n": 7 
+},
+{
+ "pass": "400",
+"n": 8 
+},
+{
+ "pass": "402",
+"n": 9 
+},
+{
+ "pass": "403",
+"n": 10 
+},
+{
+ "pass": "405",
+"n": 11 
+},
+{
+ "pass": "411",
+"n": 12 
+},
+{
+ "pass": "414",
+"n": 13 
+},
+{
+ "pass": "416",
+"n": 14 
+},
+{
+ "pass": "417",
+"n": 15 
+},
+{
+ "pass": "421",
+"n": 17 
+},
+{
+ "pass": "421",
+"n": 17 
+},
+{
+ "pass": "422",
+"n": 18 
+},
+{
+ "pass": "423",
+"n": 20 
+},
+{
+ "pass": "423",
+"n": 20 
+},
+{
+ "pass": "426",
+"n": 21 
+},
+{
+ "pass": "427",
+"n": 23 
+},
+{
+ "pass": "427",
+"n": 23 
+},
+{
+ "pass": "431",
+"n": 25 
+},
+{
+ "pass": "431",
+"n": 25 
+},
+{
+ "pass": "435",
+"n": 26 
+},
+{
+ "pass": "437",
+"n": 27 
+},
+{
+ "pass": "438",
+"n": 29 
+},
+{
+ "pass": "438",
+"n": 29 
+},
+{
+ "pass": "440",
+"n": 30 
+},
+{
+ "pass": "441",
+"n": 31 
+},
+{
+ "pass": "442",
+"n": 32 
+},
+{
+ "pass": "444",
+"n": 34 
+},
+{
+ "pass": "444",
+"n": 34 
+},
+{
+ "pass": "445",
+"n": 36 
+},
+{
+ "pass": "445",
+"n": 36 
+},
+{
+ "pass": "446",
+"n": 37 
+},
+{
+ "pass": "448",
+"n": 39 
+},
+{
+ "pass": "448",
+"n": 39 
+},
+{
+ "pass": "450",
+"n": 40 
+},
+{
+ "pass": "451",
+"n": 41 
+},
+{
+ "pass": "453",
+"n": 42 
+},
+{
+ "pass": "456",
+"n": 43 
+},
+{
+ "pass": "457",
+"n": 44 
+},
+{
+ "pass": "458",
+"n": 45 
+},
+{
+ "pass": "459",
+"n": 46 
+},
+{
+ "pass": "460",
+"n": 48 
+},
+{
+ "pass": "460",
+"n": 48 
+},
+{
+ "pass": "461",
+"n": 50 
+},
+{
+ "pass": "461",
+"n": 50 
+},
+{
+ "pass": "462",
+"n": 52 
+},
+{
+ "pass": "462",
+"n": 52 
+},
+{
+ "pass": "463",
+"n": 53 
+},
+{
+ "pass": "464",
+"n": 54 
+},
+{
+ "pass": "465",
+"n": 55 
+},
+{
+ "pass": "466",
+"n": 56 
+},
+{
+ "pass": "467",
+"n": 58 
+},
+{
+ "pass": "467",
+"n": 58 
+},
+{
+ "pass": "468",
+"n": 60 
+},
+{
+ "pass": "468",
+"n": 60 
+},
+{
+ "pass": "475",
+"n": 63 
+},
+{
+ "pass": "475",
+"n": 63 
+},
+{
+ "pass": "475",
+"n": 63 
+},
+{
+ "pass": "476",
+"n": 64 
+},
+{
+ "pass": "477",
+"n": 67 
+},
+{
+ "pass": "477",
+"n": 67 
+},
+{
+ "pass": "477",
+"n": 67 
+},
+{
+ "pass": "478",
+"n": 68 
+},
+{
+ "pass": "479",
+"n": 69 
+},
+{
+ "pass": "480",
+"n": 70 
+},
+{
+ "pass": "481",
+"n": 71 
+},
+{
+ "pass": "482",
+"n": 72 
+},
+{
+ "pass": "483",
+"n": 73 
+},
+{
+ "pass": "484",
+"n": 75 
+},
+{
+ "pass": "484",
+"n": 75 
+},
+{
+ "pass": "485",
+"n": 76 
+},
+{
+ "pass": "487",
+"n": 77 
+},
+{
+ "pass": "488",
+"n": 80 
+},
+{
+ "pass": "488",
+"n": 80 
+},
+{
+ "pass": "488",
+"n": 80 
+},
+{
+ "pass": "490",
+"n": 81 
+},
+{
+ "pass": "491",
+"n": 82 
+},
+{
+ "pass": "492",
+"n": 84 
+},
+{
+ "pass": "492",
+"n": 84 
+},
+{
+ "pass": "493",
+"n": 85 
+},
+{
+ "pass": "495",
+"n": 87 
+},
+{
+ "pass": "495",
+"n": 87 
+},
+{
+ "pass": "497",
+"n": 89 
+},
+{
+ "pass": "497",
+"n": 89 
+},
+{
+ "pass": "502",
+"n": 91 
+},
+{
+ "pass": "502",
+"n": 91 
+},
+{
+ "pass": "503",
+"n": 92 
+},
+{
+ "pass": "506",
+"n": 94 
+},
+{
+ "pass": "506",
+"n": 94 
+},
+{
+ "pass": "509",
+"n": 95 
+},
+{
+ "pass": "510",
+"n": 96 
+},
+{
+ "pass": "513",
+"n": 97 
+},
+{
+ "pass": "514",
+"n": 98 
+},
+{
+ "pass": "515",
+"n": 99 
+},
+{
+ "pass": "516",
+"n": 100 
+},
+{
+ "pass": "518",
+"n": 101 
+},
+{
+ "pass": "520",
+"n": 102 
+},
+{
+ "pass": "521",
+"n": 103 
+},
+{
+ "pass": "522",
+"n": 104 
+},
+{
+ "pass": "523",
+"n": 106 
+},
+{
+ "pass": "523",
+"n": 106 
+},
+{
+ "pass": "525",
+"n": 107 
+},
+{
+ "pass": "527",
+"n": 108 
+},
+{
+ "pass": "528",
+"n": 109 
+},
+{
+ "pass": "529",
+"n": 110 
+},
+{
+ "pass": "531",
+"n": 111 
+},
+{
+ "pass": "534",
+"n": 112 
+},
+{
+ "pass": "535",
+"n": 113 
+},
+{
+ "pass": "538",
+"n": 114 
+},
+{
+ "pass": "539",
+"n": 115 
+},
+{
+ "pass": "546",
+"n": 118 
+},
+{
+ "pass": "546",
+"n": 118 
+},
+{
+ "pass": "546",
+"n": 118 
+},
+{
+ "pass": "551",
+"n": 119 
+},
+{
+ "pass": "552",
+"n": 120 
+},
+{
+ "pass": "556",
+"n": 121 
+},
+{
+ "pass": "557",
+"n": 122 
+},
+{
+ "pass": "568",
+"n": 123 
+},
+{
+ "pass": "576",
+"n": 124 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        
+          
+        
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>
